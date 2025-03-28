@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "sage-pharma-supply-agent"
+version = "0.1.0"
+description = "Multi-agent pharmaceutical supply chain optimizer using OECD Pharma data (19.6M rows), World Bank fi"
+authors = [{name = "Kaushik Sarkar", email = "dr.kaushiks@hotmail.com"}]
+license = {text = "MIT"}
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
